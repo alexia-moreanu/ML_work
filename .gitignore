@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+
+# Personal files unrelated to this assignment's notebook
+book1.pdf
+Screenshot*.png
+machine_learning_mind_map.png
+ml_mind_map_from_sketch.png
+*.pdf
