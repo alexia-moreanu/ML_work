@@ -8,3 +8,18 @@ Screenshot*.png
 machine_learning_mind_map.png
 ml_mind_map_from_sketch.png
 *.pdf
+
+# Python build / environment files
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# First Pipeline: private health data and generated results (never commit)
+apple_health_export*/
+_to_delete/
+pipeline1/data_private/
+pipeline1/outputs/
+pipeline1/outputs_run/
+pipeline1/notebooks/*.html
+pipeline1/notebooks/*_backup.ipynb
+pipeline1/notebooks/first_pipeline_full_writeup.ipynb

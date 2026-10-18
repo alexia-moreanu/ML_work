@@ -1,0 +1,17 @@
+[project]
+name = "watchlab"
+version = "0.1.0"
+description = "Open-source toolkit: Apple Health export -> personal readiness score, calm/elevated states, weekend advice"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "hmmlearn", "matplotlib"]
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyter"]
+
+[project.scripts]
+watchlab = "cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["cli", "parse_health", "features", "stage_a", "stage_b", "recovery", "daily", "daily_models", "hmm_states", "moments", "advice", "pipeline", "synthetic"]
